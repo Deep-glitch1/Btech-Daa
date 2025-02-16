@@ -1,19 +1,17 @@
 #include <iostream>
 using namespace std;
 void linearSearch(int arr[], int n, int key) {
-    int comparisons = 0;
     int found = 0;
     for (int i = 0; i < n; i++) {
-        comparisons++;
         if (arr[i] == key) {
             found = 1;
             break;
         }
     }
     if (found)
-        cout << "Present " << comparisons << endl;
+        cout << "Present " << endl;
     else
-        cout << "Not Present " << comparisons << endl;
+        cout << "Not Present " << endl;
 }
 
 int main() {
