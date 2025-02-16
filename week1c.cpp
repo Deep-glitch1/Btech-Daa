@@ -36,7 +36,5 @@ int main() {
             cout << "Present " << endl;
         else
             cout << "Not Present " << endl;
-    }
-    
-    return 0;
+        return 0;
 }
