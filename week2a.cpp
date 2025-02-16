@@ -6,7 +6,7 @@ int firstOccurrence(int arr[], int n, int key) {
         int mid = left + (right - left) / 2;
         if (arr[mid] == key) {
             result = mid;
-            right = mid - 1; // Search in left half
+            right = mid - 1; 
         } else if (arr[mid] < key)
             left = mid + 1;
         else
@@ -18,10 +18,9 @@ int lastOccurrence(int arr[], int n, int key) {
     int left = 0, right = n - 1, result = -1;
     while (left <= right) {
         int mid = left + (right - left) / 2;
-        comparisons++;
         if (arr[mid] == key) {
             result = mid;
-            left = mid + 1; // Search in right half
+            left = mid + 1;
         } else if (arr[mid] < key)
             left = mid + 1;
         else
@@ -45,8 +44,6 @@ int main() {
             int last = lastOccurrence(arr, n, key);
             cout << "Present " << (last - first + 1) << " " << endl;
         }
-    }
-    
-    return 0;
+        return 0;
 }
 
